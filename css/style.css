@@ -230,6 +230,14 @@ body{
         margin: 0 0 0 .7rem;
         font-size: 2rem;
     }
+    .projet-presentation{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .presentation-projet{
+        display: none;
+    }
     .container-projects{
         padding: 1.2rem;
         background-color: #8B0000;
@@ -514,12 +522,22 @@ header section{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .projects{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 5rem;
+}
+.projet-presentation{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.presentation-projet{
+    width: 45%;
+    font-size: 1.5rem;
+    text-wrap: pretty;
 }
 .projects-h1{
     font-size: 3rem;
@@ -533,10 +551,14 @@ header section{
     padding: 1.2rem;
     background-color: #8B0000;
     border-radius: 10px;
-    width: 30%;
+    width: 25%;
     margin: 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: transform 1s ease;
+}
+.container-projects:hover{
+    transform: scale(1.1);
 }
 .img-redirect{
     position: relative;
@@ -583,4 +605,67 @@ header section{
     width: 1.7rem;
     height: 1.7rem;
 }
+footer {
+    background: #5B0202;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-message {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.form-message p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-message input,
+.form-message textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-message button {
+    width: 105%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e63946;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-message button:hover {
+    background: #ff4d5a;
+}
+.social-links a svg{
+    fill: white;
+    width: 1.8rem;
+    transition: 0.3s;
+}
+.social-links a{
+    margin: 1rem;
+}
+.social-links a svg:hover {
+    transform: scale(1.2);
+} 
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
 }
